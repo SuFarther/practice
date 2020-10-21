@@ -1,0 +1,40 @@
+[形参和返回值的类型的约束]
+  function sum (int  $num1, int $num2) //形参的
+  {
+     return $num1 +  $num2;
+  }
+
+  (sum('2.3',3));
+
+  //小括号后面加上: 加上数值类型 把函数体返回的值给转成你限定的类型
+
+  function sum($num1 , $num2):string //返回值的
+  {
+     return $num1 + $num2;
+  }
+  (sum(4,5));
+
+  //php 7.0新特性
+  function test(...$arr)
+  {
+    var_dump($arr);
+  }
+  test(1,2,3,4,5,6,7);
+
+
+  function test($a,$b,$c)
+  {
+     var_dump($a,$b,$c);
+  }
+  $arr= [1,2,3];
+  test(...$arr);
+
+  总结：
+    ...$arr 这样传参的意思是把数组里面的值 --赋值给形参
+  [匿名函数]
+  所谓的匿名函数九四没有名字
+  // 如果你想用,怎么办 赋值给一个变量然后 该怎么调用就怎么调用 变量加上() 跟普通变量一样
+
+$func = function(){
+}
+$func();

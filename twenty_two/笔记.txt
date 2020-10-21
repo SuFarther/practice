@@ -1,0 +1,22 @@
+[超全局数组]
+
+$_GET $_POST $_REQUEST $_SERVER $_SESSION $_COOKIE
+
+关于GET method="get/post"
+
+[$_GET] 如果你的form表单里面不写提交方式,默认是get通过url传过去的
+
+如果你想用post方式去传参,你必须指定post方式
+
+你用get方式提交你必须用get接受
+
+[$_POST]你用post方式提交你必须用post接受 $_POST['username']
+
+[$_REQUEST] 可以接受post提交过来的还能接受get提交过来的
+
+建议: 你用什么方式提交,你就用什么方式接受
+
+[$_SERVER]
+   $_SERVER['REMOTE_ADDR']; //获取ip地址
+
+   $_SERVER['HTTP_REFERER']; //上级来源页

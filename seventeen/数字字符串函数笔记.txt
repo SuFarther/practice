@@ -1,0 +1,53 @@
+数学函数:
+随机:
+  rand
+  mt_rand
+
+小数：
+ floor: 向上取整
+ ceil: 向下取整
+ round: 四舍五入法取整
+
+其它：
+  abs: 绝对值
+  pi: 圆周率
+  M_PI: 常量, 与pi()函数的返回值相同
+  pow: 指数表达式
+  max: 最大值
+  min: 最小值
+
+字符串函数:
+
+大小写转换：
+  strtolower: 转换为大小写
+  strtoupper: 转换为大写
+  lcfirst: 首字母小写
+  ucfirst: 首字母大写
+  ucwords: 每个单词首字母大写
+
+空白处理：
+  trim: 去掉首尾的空白字符
+  ltrim: 去掉开头的空白字符
+  rtrim/chop: 去掉结尾的空白字符
+
+查找定位
+  strstr/strchr: 返回首次出现到结尾的内容
+  strrchr: 返回最后一次出现到结尾的内容
+  stristr: strstr忽略大小写的版本
+  strpos: 返回首次出现的位置
+  stripos: strpos忽略大小写的版本
+  strrpos: 返回最后一次出现的位置
+  strripos: strrpos忽略大小写的版本
+  strripos: strrpos忽略大小写的版本
+  substr: 子串提取,可以通过下标方式获取单个字符($str[n])
+  strpbrk:返回（字符列表种的任意字符）首次出现在结尾的内容
+
+比较:
+   strcmp: 二进制比较字符串
+   strcasecmp: strcmp忽略大小写
+   strnatcmp: 自然顺序比较
+   strnatcasecmp:  strnatcasecmp的忽略大小写版本
+
+顺序：
+   str_shuffle: 打乱顺序(舒服了)
+   strrev: 逆序字符串
